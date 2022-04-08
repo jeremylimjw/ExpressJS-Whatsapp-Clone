@@ -19,7 +19,7 @@ const userSchema = mongoose.Schema(
 );
 
 userSchema.statics.getUserDetails = async function (id) {
-  return await User.findById(id, { _id: 1, name: 1, username: 1 }).lean();
+  return User.findById(id, { _id: 1, name: 1, username: 1 }).lean();
 };
 
 userSchema.statics.isUsernameTaken = async function (username) {

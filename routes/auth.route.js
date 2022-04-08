@@ -24,7 +24,8 @@ router.post('/', async function(req, res) {
             user = await User.create({ username: trimmed.toLowerCase() });
         }
         
-        res.cookie(COOKIE_NAME, user._id);
+        // github.io does not support cookies
+        // res.cookie(COOKIE_NAME, user._id);
 
         res.send(user);
   
@@ -40,7 +41,8 @@ router.post('/', async function(req, res) {
 router.post('/logout', requireLogin, async function(req, res) {
     const user = res.locals.user;
 
-    res.cookie(COOKIE_NAME, user.id, { maxAge: 0 });
+    // github.io does not support cookies
+    // res.cookie(COOKIE_NAME, user.id, { maxAge: 0 });
 
     res.send({});
 
