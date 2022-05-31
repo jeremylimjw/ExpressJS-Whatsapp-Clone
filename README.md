@@ -1,16 +1,18 @@
-# Whatsapp Clone Web Application
-A side project developed with the objective to learn and experience the popular React framework. This app utilizes web sockets to enable features as listed below. The login system only comprises of an 8 digit number, if the number entered does not exist in DB, a new account will be created automatically. Messages are not encrypted. Lastly, MongoDB connection string is omitted in this repository for safety reasons.
-![overall](https://user-images.githubusercontent.com/25372669/138921672-51fcd91d-75d6-4246-9dca-5b9064cea9b9.png)
+# ReactJS Whatsapp Clone
+A side project developed with the objective to learn and experience the popular React framework. This app utilizes web sockets to enable features as listed below. The login system only requires a single string (username), if the username does not exist, a new user will be created automatically. Messages are not encrypted.
 
 # Features
 1. Real-time Online/Last seen timestamp  
-![last_seen](https://user-images.githubusercontent.com/25372669/138921726-061664c4-1d3f-4740-bff1-6856f7e67d18.png)
+![image](https://user-images.githubusercontent.com/25372669/162619056-df6eef2d-8697-40c9-b08d-3409c1bf5388.png)
 2. Real-time message's read receipts Sent/Received/Read states  
-![receipts](https://user-images.githubusercontent.com/25372669/138921717-74313319-3a51-409b-aada-0423bbeb1847.png)
-3. Real-time group chat and direct messaging
+![image](https://user-images.githubusercontent.com/25372669/162619005-52572c7a-1419-4cc0-9bf3-b638ab6c1770.png)
+3. Async text sending - No need to wait for message to send out before typing the next message
+![image](https://user-images.githubusercontent.com/25372669/162619238-d86a073f-edf0-459e-93b0-ea092da83d66.png)
+4. Lazy loading of messages, triggered by scrolling up
+5. Real-time group chat and direct messaging
 
 # Tech Stack
-- ReactJS 17
+- ReactJS v17
 - ExpressJS
 - MongoDB
 
